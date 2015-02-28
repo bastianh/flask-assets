@@ -29,6 +29,8 @@ def parse_version(asignee):
         else:
             raise Exception("cannot find version")
 version = parse_version('__version__')
+version += "-daf"
+
 webassets_requirement = parse_version('__webassets_version__')
 
 setup(
